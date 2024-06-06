@@ -65,34 +65,41 @@
         <h1 class="text-center logoFont">contactanos</h1>
       </section>
       <section class="container">
-        <div class="row">
-          <form class="col-6">
-            <label for="name" class="form-label">Nombre y Apellido*</label>
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              placeholder="Ej: Juan perez"
-              minlength="8"
-              maxlength="20"
-              required
-            />
-            <label for="email" class="form-label">Email*</label>
-            <input
-              type="text"
-              class="form-control"
-              id="email"
-              placeholder="Ej: juanperez@mail.com"
-              minlength="16"
-              maxlength="320"
-              required
-            />
-            <label for="textarea">Consulta *</label>
-            <textarea
-              id="textarea"
-              class="form-control"
-              placeholder="ingresá tu consulta"
-            ></textarea>
+        <article class="row my-3">
+          <form class="col-md-6">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre y Apellido*</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Ej: Juan perez"
+                minlength="8"
+                maxlength="20"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email*</label>
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                placeholder="Ej: juanperez@mail.com"
+                minlength="16"
+                maxlength="320"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="textarea">Consulta *</label>
+              <textarea
+                id="textarea"
+                class="form-control"
+                placeholder="ingresá tu consulta"
+                rows="3"
+              ></textarea>
+            </div>
             <button
               class="btn btn-outline-light"
               type="button"
@@ -102,10 +109,10 @@
               Enviar
             </button>
           </form>
-          <div class="col-6 bg-body-tertiary rounded-3">
+          <div class="col-md-6 bg-body-tertiary rounded-3 my-3">
             <p>aquí agregaremos un mapita</p>
           </div>
-        </div>
+        </article>
       </section>
     </main>
     <footer class="container-fluid">
