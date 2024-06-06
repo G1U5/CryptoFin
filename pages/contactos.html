@@ -13,64 +13,139 @@
     <title>CryptoFin</title>
   </head>
   <body>
-      <header>
-        <nav class="navbar navbar-expand-lg bg-primary-subtle shadow">
-          <div class="container">
-            <a class="navbar-brand logoFont" href="../index.html">CryptoFin</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#opcionesMenu"
-              aria-controls="opcionesMenu"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="opcionesMenu">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="../index.html"
-                    >Inicio</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./sobreNosotros.html"
-                    >¿Quienes Somos?</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/preguntasFrecuentes.html"
-                    >Preguntas frecuentes</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/preguntasFrecuentes.html"
-                    >Robo o extravio</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/preguntasFrecuentes.html"
-                    >Contactos</a
-                  >
-                </li>
-              </ul>
-            </div>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-primary-subtle shadow">
+        <div class="container">
+          <a class="navbar-brand logoFont" href="../index.html">CryptoFin</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#opcionesMenu"
+            aria-controls="opcionesMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="opcionesMenu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sobreNosotros.html"
+                  >¿Quienes Somos?</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/preguntasFrecuentes.html"
+                  >Preguntas frecuentes</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/preguntasFrecuentes.html"
+                  >Robo o extravio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/preguntasFrecuentes.html"
+                  >Contactos</a
+                >
+              </li>
+            </ul>
           </div>
-        </nav>
-      </header>
-      <main>
-        <section class="container-fluid bg-primary-subtle p-5">
-            <h1 class="text-center logoFont">contactanos</h1>
-        </section>
-        <div>
-            <form>
-                <label for="name">Nombre y Apellido *</label>
-            </form>
         </div>
-      </main>
-      <footer></footer>
-      <script src="./Js/bootstrap.min.js"></script>
+      </nav>
+    </header>
+    <main>
+      <section class="container-fluid bg-primary-subtle p-5">
+        <h1 class="text-center logoFont">contactanos</h1>
+      </section>
+      <section class="container">
+        <div class="row">
+          <form class="col-6">
+            <label for="name" class="form-label">Nombre y Apellido*</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Ej: Juan perez"
+              minlength="8"
+              maxlength="20"
+              required
+            />
+            <label for="email" class="form-label">Email*</label>
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              placeholder="Ej: juanperez@mail.com"
+              minlength="16"
+              maxlength="320"
+              required
+            />
+            <label for="textarea">Consulta *</label>
+            <textarea
+              id="textarea"
+              class="form-control"
+              placeholder="ingresá tu consulta"
+            ></textarea>
+            <button
+              class="btn btn-outline-light"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#modalRegistro"
+            >
+              Enviar
+            </button>
+          </form>
+          <div class="col-6 bg-body-tertiary rounded-3">
+            <p>aquí agregaremos un mapita</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container-fluid">
+      <div class="row bg-secondary-subtle p-5 text-center text-md-start">
+        <div class="text-center text-md-start mb-3">
+          <h2 class="logoFont">
+            CryptoFin <i class="bi bi-facebook lead text-secondary"></i>
+            <i class="bi bi-twitter-x lead text-secondary"></i>
+            <i class="bi bi-instagram lead text-secondary"></i>
+          </h2>
+        </div>
+        <div class="text-secondary col-md-3">
+          <h2>Navegación</h2>
+          <ul class="list-unstyled">
+            <li>¿Quienes somos?</li>
+            <li>Precios</li>
+            <li>Seguridad</li>
+            <li>ayuda</li>
+            <li>Robo o extravio</li>
+          </ul>
+        </div>
+        <div class="text-secondary col-md-3">
+          <h2>Navegación</h2>
+          <ul class="list-unstyled">
+            <li>Email: contacto@cryptofin.com</li>
+            <li>Teléfono: +123 456 7890</li>
+            <li>Dirección: Calle Ficticia 123, Ciudad, País</li>
+            <li>Terminos y condiciones</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <img class="w-75" src="../img/usuariosfinancieros.png" alt="" />
+        </div>
+        <div class="col-md-3 text-secondary pt-3">
+          <h2>Unite</h2>
+          <img class="py-2" src="../img/badge-apple-store.svg" alt="" />
+          <img src="../img/google-play-badge-bb.svg" alt="" />
+        </div>
+      </div>
+    </footer>
+    <script src="./Js/bootstrap.min.js"></script>
   </body>
 </html>
